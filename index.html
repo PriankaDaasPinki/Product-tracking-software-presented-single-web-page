@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-bit Footwear</title>
+    <link
+      href="https://www.esquiretechnology.com/assets/frontend/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap";
+    ">
+    <style>
+      .mainContainer {
+        background-color: #d7e3df;
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .row {
+        justify-content: center;
+        align-items: center;
+        h3 {
+          color: white;
+          text-align: center;
+        }
+      }
+      .mainImage {
+        background-image: url("/mainImage.png");
+        padding: 50px 20px;
+      }
+
+      .mainText {
+        color: white;
+        text-align: center;
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+
+      .productImage {
+        width: -webkit-fill-available;
+        border-radius: 10px;
+      }
+
+      .textSection {
+        padding-top: 90px;
+        color: #286090;
+        text-align: center;
+        h1 {
+          font-size: 48px;
+          font-weight: 600;
+        }
+        h4 {
+          font-size: 2rem;
+        }
+        p {
+          color: gray;
+          font-size: 1.5rem;
+        }
+      }
+
+      .sub-title {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+
+      .textSection .sub-title:after {
+        display: inline-block;
+        width: 100px;
+        position: relative;
+        top: 10px;
+        font-size: 4em;
+        color: #0e5178;
+        content: "—";
+      }
+
+      .btn {
+        text-align: center;
+        width: 130px;
+        padding: 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: #0e5178;
+        border-color: #0e5178;
+      }
+
+      .secondSection {
+        color: #0e5178;
+        text-align: center;
+        padding: 0 20%;
+        img {
+          height: 300px;
+          width: 300px;
+          border-radius: 20px;
+        }
+        p{
+          color: gray;
+        }
+      }
+
+      .thirdSection {
+        padding: 0 20%;
+        div{
+          padding: 0;
+          /* border-radius: 20px; */
+          img{
+            width: -webkit-fill-available;
+            height: auto;
+            border-radius: 20px !important;
+          }
+        }
+        .iconBenefit {
+          width: 10%;
+        }
+        p {
+          margin: 0;
+          padding-left: 20px;
+          text-align: justify;
+        }
+      }
+
+      .forthSection {
+        padding: 0 5%;
+        .howItWorks {
+          padding: 2%;
+          .workProcess {
+            height: 400px;
+            border-radius: 20px;
+            color: white;
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+            h3 {
+              font-size: 1.6rem;
+              font-weight: bold;
+              padding: 0 20px 0 20px;
+            }
+            p {
+              margin: 0;
+              font-size: 1rem;
+              text-align: center;
+              padding: 0 30px 50px 30px;
+            }
+
+            .overlay {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: end;
+              border-radius: 20px;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.7);
+            }
+          }
+        }
+      }
+
+      .workProcess:hover{
+        transform: translateY(-10px);
+      }
+
+      .fifthSection {
+        padding: 0 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 300px;
+          width: 300px;
+          border-radius: 50%;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .secondSection {
+          padding: 0;
+          img {
+            padding: 25px 0 10px 0;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid mainContainer">
+      <div class="row mainImage">
+        <div class="col-md-6 mainText">
+          <h3>Welcome to</h3>
+          <h1>esquire technology</h1>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="rounded mx-auto d-block productImage"
+            src="https://www.esquiretechnology.com//storage/products/May2024/bye7dPq9yG9BLnDjyOmh.jpg"
+            alt="Product Image"
+          />
+        </div>
+        <div class="row pt-5">
+          <div class="col-md-3">
+            <h3>UI/UX Designing</h3>
+          </div>
+          <div class="col-md-3">
+            <h3>Vehicle Tracking</h3>
+          </div>
+          <div class="col-md-3">
+            <h3>Security System</h3>
+          </div>
+          <div class="col-md-3">
+            <h3>Software Development</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-column justify-content-center textSection">
+        <div>
+          <span class="sub-title">Services we offer</span>
+          <h1>E-bit Footwear</h1>
+        </div>
+        <div>
+          <h4>
+            Efficiently Track Footwear Production with RFID, Barcode, and QR
+            Code Technology.
+          </h4>
+        </div>
+      </div>
+      <div class="secondSection">
+        <div class="row pt-5">
+          <div class="col-md-6 col-sm-12">
+            <img src="/product1.jpeg" />
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <h4>Product Name</h4>
+            <p>Product Short Des<br>How much</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 order-2 order-md-1">
+            <h4>Product Name</h4>
+            <p>Product Short Des<br>How much</p>
+          </div>
+          <div class="col-md-6 col-sm-12 order-1 order-md-2">
+            <img src="/product2.jpeg" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12"><img src="/product1.jpeg" /></div>
+          <div class="col-md-6 col-sm-12">
+            <h4>Product Name</h4>
+            <p>Product Short Des<br>How much</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 order-2 order-md-1">
+            <h4>Product Name</h4>
+            <p>Product Short Des<br>How much</p>
+          </div>
+          <div class="col-md-6 col-sm-12 order-1 order-md-2">
+            <img src="/product2.jpeg" />
+          </div>
+        </div>
+      </div>
+      <div class="row flex-column justify-content-center textSection">
+        <div>
+          <span class="sub-title">Services we offer</span>
+          <h1>Numerous Benefits</h1>
+        </div>
+        <div>
+          <p>You won't call another service after that</p>
+        </div>
+      </div>
+      <div class="thirdSection">
+        <div class="row justify-content-center">
+          <img class="rounded" src="/Benifit.jpg" alt="benifit image" />
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 p-5">
+            <div class="d-flex">
+              <img
+                class="iconBenefit"
+                src="https://www.svgrepo.com/show/447910/benefits-welfare-expenses.svg"
+                alt=""
+              />
+              <p>
+                Increased Efficiency: Real-time data for faster decision-making.
+              </p>
+            </div>
+            <div class="d-flex pt-5">
+              <img
+                class="iconBenefit"
+                src="https://static.thenounproject.com/png/1337911-200.png"
+                alt=""
+              />
+              <p>
+                Increased Efficiency: Real-time data for faster decision-making.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 p-5">
+            <div class="d-flex">
+              <img
+                class="iconBenefit"
+                src="https://www.svgrepo.com/show/447910/benefits-welfare-expenses.svg"
+                alt=""
+              />
+              <p>
+                Increased Efficiency: Real-time data for faster decision-making.
+              </p>
+            </div>
+            <div class="d-flex pt-5">
+              <img
+                class="iconBenefit"
+                src="https://static.thenounproject.com/png/1337911-200.png"
+                alt=""
+              />
+              <p>
+                Increased Efficiency: Real-time data for faster decision-making.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div>
+          <button type="button" class="btn btn-primary">Free Trial</button>
+        </div>
+        <div class="mt-2">No credit card required</div>
+      </div>
+      <div class="row flex-column justify-content-center textSection">
+        <div>
+          <span class="sub-title">Services we offer</span>
+          <h1>How It Works</h1>
+        </div>
+        <div>
+          <p>Efficiently Track Your Production with E-bit Footwear</p>
+        </div>
+      </div>
+      <div class="forthSection">
+        <div class="row">
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work1.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work2.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work1.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work2.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work2.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work1.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work2.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>How barcode tracking is integrated for product manage</p>
+              </div>
+            </div>
+          </div>
+          <div class="howItWorks col-md-3">
+            <div
+              class="workProcess"
+              style="background-image: url('/work1.png')"
+            >
+              <div class="overlay">
+                <h3>Barcode Tracking</h3>
+                <p>
+                  How barcode tracking is integrated for product manage How
+                  barcode tracking is integrated for product manage
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row flex-column justify-content-center textSection">
+        <div>
+          <span class="sub-title">Services we offer</span>
+          <h1>Book Your Product Now</h1>
+        </div>
+      </div>
+      <div class="fifthSection">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/work1.png" />
+          </div>
+          <div class="howItWorks col-md-3">
+            <img src="/work2.png" />
+          </div>
+          <div class="howItWorks col-md-3">
+            <img src="/work1.png" />
+          </div>
+          <div class="howItWorks col-md-3">
+            <img src="/work2.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <div>
+          <button type="button" class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
