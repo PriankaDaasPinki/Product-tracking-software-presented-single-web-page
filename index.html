@@ -9,7 +9,8 @@
       rel="stylesheet"
     />
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap";
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap";
     ">
     <style>
       .mainContainer {
@@ -27,6 +28,13 @@
       }
       .mainImage {
         background-image: url("/mainImage.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .overlayMainImage {
+        background-color: rgba(0, 0, 0, 0.4);
         padding: 50px 20px;
       }
 
@@ -40,26 +48,33 @@
         }
       }
 
-      .productImage {
+      .mainProductImage {
         width: -webkit-fill-available;
         border-radius: 10px;
       }
 
       .textSection {
         padding-top: 90px;
+        padding-bottom: 20px;
         color: #286090;
         text-align: center;
         h1 {
           font-size: 48px;
           font-weight: 600;
+          padding-bottom: 13px;
         }
         h4 {
-          font-size: 2rem;
+          font-family: "DM Sans", sans-serif;
+          color: gray;
+          font-size: 1.8rem;
         }
         p {
           color: gray;
           font-size: 1.5rem;
         }
+      }
+      p {
+        font-family: "DM Sans", sans-serif;
       }
 
       .sub-title {
@@ -80,8 +95,9 @@
 
       .btn {
         text-align: center;
-        width: 130px;
-        padding: 10px;
+        width: 150px;
+        padding: 20px;
+        /* margin: 0 0 45% 0; */
         font-size: 13px;
         text-transform: uppercase;
         font-weight: 600;
@@ -98,17 +114,17 @@
           width: 300px;
           border-radius: 20px;
         }
-        p{
+        p {
           color: gray;
         }
       }
 
       .thirdSection {
         padding: 0 20%;
-        div{
+        div {
           padding: 0;
           /* border-radius: 20px; */
-          img{
+          img {
             width: -webkit-fill-available;
             height: auto;
             border-radius: 20px !important;
@@ -135,6 +151,7 @@
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Do not repeat the image */
             background-size: cover;
+            transition: transform 0.6s ease-out 10ms;
             h3 {
               font-size: 1.6rem;
               font-weight: bold;
@@ -146,7 +163,6 @@
               text-align: center;
               padding: 0 30px 50px 30px;
             }
-
             .overlay {
               display: flex;
               flex-direction: column;
@@ -158,22 +174,28 @@
               background-color: rgba(0, 0, 0, 0.7);
             }
           }
+          .workProcess:hover {
+            transform: translateY(-15px);
+          }
         }
       }
 
-      .workProcess:hover{
-        transform: translateY(-10px);
-      }
-
       .fifthSection {
-        padding: 0 5%;
+        padding: 20px 5% 3rem 5%;
         display: flex;
         justify-content: center;
         align-items: center;
         img {
           height: 300px;
           width: 300px;
+          margin: 20px;
           border-radius: 50%;
+          transition: transform 0.6s ease-out 10ms;
+          /* transition: transform 0.2s; */
+        }
+        img:hover {
+          transform: scale(1.2);
+          /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
         }
       }
 
@@ -190,33 +212,35 @@
   <body>
     <div class="container-fluid mainContainer">
       <div class="row mainImage">
-        <div class="col-md-6 mainText">
-          <h3>Welcome to</h3>
-          <h1>esquire technology</h1>
-        </div>
-        <div class="col-md-6">
-          <img
-            class="rounded mx-auto d-block productImage"
-            src="https://www.esquiretechnology.com//storage/products/May2024/bye7dPq9yG9BLnDjyOmh.jpg"
-            alt="Product Image"
-          />
-        </div>
-        <div class="row pt-5">
-          <div class="col-md-3">
-            <h3>UI/UX Designing</h3>
+        <div class="row overlayMainImage">
+          <div class="col-md-6 mainText">
+            <h3>Welcome to</h3>
+            <h1>esquire technology</h1>
           </div>
-          <div class="col-md-3">
-            <h3>Vehicle Tracking</h3>
+          <div class="col-md-6">
+            <img
+              class="rounded mx-auto d-block mainProductImage"
+              src="https://www.esquiretechnology.com//storage/products/May2024/bye7dPq9yG9BLnDjyOmh.jpg"
+              alt="Product Image"
+            />
           </div>
-          <div class="col-md-3">
-            <h3>Security System</h3>
-          </div>
-          <div class="col-md-3">
-            <h3>Software Development</h3>
+          <div class="row pt-5">
+            <div class="col-md-3">
+              <h3>UI/UX Designing</h3>
+            </div>
+            <div class="col-md-3">
+              <h3>Vehicle Tracking</h3>
+            </div>
+            <div class="col-md-3">
+              <h3>Security System</h3>
+            </div>
+            <div class="col-md-3">
+              <h3>Software Development</h3>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row flex-column justify-content-center textSection">
+      <div class="d-flex flex-column justify-content-center textSection">
         <div>
           <span class="sub-title">Services we offer</span>
           <h1>E-bit Footwear</h1>
@@ -235,13 +259,13 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <h4>Product Name</h4>
-            <p>Product Short Des<br>How much</p>
+            <p>Product Short Des<br />How much</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-sm-12 order-2 order-md-1">
             <h4>Product Name</h4>
-            <p>Product Short Des<br>How much</p>
+            <p>Product Short Des<br />How much</p>
           </div>
           <div class="col-md-6 col-sm-12 order-1 order-md-2">
             <img src="/product2.jpeg" />
@@ -251,20 +275,20 @@
           <div class="col-md-6 col-sm-12"><img src="/product1.jpeg" /></div>
           <div class="col-md-6 col-sm-12">
             <h4>Product Name</h4>
-            <p>Product Short Des<br>How much</p>
+            <p>Product Short Des<br />How much</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-sm-12 order-2 order-md-1">
             <h4>Product Name</h4>
-            <p>Product Short Des<br>How much</p>
+            <p>Product Short Des<br />How much</p>
           </div>
           <div class="col-md-6 col-sm-12 order-1 order-md-2">
             <img src="/product2.jpeg" />
           </div>
         </div>
       </div>
-      <div class="row flex-column justify-content-center textSection">
+      <div class="d-flex flex-column justify-content-center textSection">
         <div>
           <span class="sub-title">Services we offer</span>
           <h1>Numerous Benefits</h1>
@@ -274,8 +298,8 @@
         </div>
       </div>
       <div class="thirdSection">
-        <div class="row justify-content-center">
-          <img class="rounded" src="/Benifit.jpg" alt="benifit image" />
+        <div class="d-flex justify-content-center">
+          <img src="/Benifit.jpg" alt="benifit image" />
         </div>
         <div class="row">
           <div class="col-md-6 col-sm-12 p-5">
@@ -328,9 +352,9 @@
         <div>
           <button type="button" class="btn btn-primary">Free Trial</button>
         </div>
-        <div class="mt-2">No credit card required</div>
+        <div class="mt-3 text-secondary"><p>No credit card required</p></div>
       </div>
-      <div class="row flex-column justify-content-center textSection">
+      <div class="d-flex flex-column justify-content-center textSection">
         <div>
           <span class="sub-title">Services we offer</span>
           <h1>How It Works</h1>
@@ -437,19 +461,17 @@
         </div>
       </div>
 
-      <div class="row flex-column justify-content-center textSection">
-        <div>
-          <span class="sub-title">Services we offer</span>
-          <h1>Book Your Product Now</h1>
-        </div>
+      <div class="d-flex flex-column justify-content-center textSection">
+        <span class="sub-title">Services we offer</span>
+        <h1>Book Your Product Now</h1>
       </div>
       <div class="fifthSection">
         <div class="row">
           <div class="col-md-3">
-            <img src="/work1.png" />
+            <img class="productImage" src="/work1.png" />
           </div>
           <div class="howItWorks col-md-3">
-            <img src="/work2.png" />
+            <img class="productImage" src="/work2.png" />
           </div>
           <div class="howItWorks col-md-3">
             <img src="/work1.png" />
@@ -460,10 +482,10 @@
         </div>
       </div>
 
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <div>
-          <button type="button" class="btn btn-primary">Buy Now</button>
-        </div>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center pb-5"
+      >
+        <button type="button" class="btn btn-primary">Buy Now</button>
       </div>
     </div>
   </body>
