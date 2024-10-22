@@ -5,209 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-bit Footwear</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap;"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://www.esquiretechnology.com/assets/frontend/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/style.css" />
 
-    <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap";
-    ">
-    <style>
-      .mainContainer {
-        background-color: #d7e3df;
-        font-family: "Space Grotesk", sans-serif;
-      }
-
-      .row {
-        justify-content: center;
-        align-items: center;
-        h3 {
-          color: white;
-          text-align: center;
-        }
-      }
-      .mainImage {
-        background-image: url("/mainImage.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .overlayMainImage {
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 50px 20px;
-      }
-
-      .mainText {
-        color: white;
-        text-align: center;
-        h1 {
-          font-size: 3rem;
-          font-weight: 700;
-          text-transform: uppercase;
-        }
-      }
-
-      .mainProductImage {
-        width: -webkit-fill-available;
-        border-radius: 10px;
-      }
-
-      .textSection {
-        padding-top: 90px;
-        padding-bottom: 20px;
-        color: #286090;
-        text-align: center;
-        h1 {
-          font-size: 48px;
-          font-weight: 600;
-          padding-bottom: 13px;
-        }
-        h4 {
-          font-family: "DM Sans", sans-serif;
-          color: gray;
-          font-size: 1.8rem;
-        }
-        p {
-          color: gray;
-          font-size: 1.5rem;
-        }
-      }
-      p {
-        font-family: "DM Sans", sans-serif;
-      }
-
-      .sub-title {
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-      }
-
-      .textSection .sub-title:after {
-        display: inline-block;
-        width: 100px;
-        position: relative;
-        top: 10px;
-        font-size: 4em;
-        color: #0e5178;
-        content: "—";
-      }
-
-      .btn {
-        text-align: center;
-        width: 150px;
-        padding: 20px;
-        /* margin: 0 0 45% 0; */
-        font-size: 13px;
-        text-transform: uppercase;
-        font-weight: 600;
-        background-color: #0e5178;
-        border-color: #0e5178;
-      }
-
-      .secondSection {
-        color: #0e5178;
-        text-align: center;
-        padding: 0 20%;
-        img {
-          height: 300px;
-          width: 300px;
-          border-radius: 20px;
-        }
-        p {
-          color: gray;
-        }
-      }
-
-      .thirdSection {
-        padding: 0 20%;
-        div {
-          padding: 0;
-          /* border-radius: 20px; */
-          img {
-            width: -webkit-fill-available;
-            height: auto;
-            border-radius: 20px !important;
-          }
-        }
-        .iconBenefit {
-          width: 10%;
-        }
-        p {
-          margin: 0;
-          padding-left: 20px;
-          text-align: justify;
-        }
-      }
-
-      .forthSection {
-        padding: 0 5%;
-        .howItWorks {
-          padding: 2%;
-          .workProcess {
-            height: 400px;
-            border-radius: 20px;
-            color: white;
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover;
-            transition: transform 0.6s ease-out 10ms;
-            h3 {
-              font-size: 1.6rem;
-              font-weight: bold;
-              padding: 0 20px 0 20px;
-            }
-            p {
-              margin: 0;
-              font-size: 1rem;
-              text-align: center;
-              padding: 0 30px 50px 30px;
-            }
-            .overlay {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: end;
-              border-radius: 20px;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.7);
-            }
-          }
-          .workProcess:hover {
-            transform: translateY(-15px);
-          }
-        }
-      }
-
-      .fifthSection {
-        padding: 20px 5% 3rem 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          height: 300px;
-          width: 300px;
-          margin: 20px;
-          border-radius: 50%;
-          transition: transform 0.6s ease-out 10ms;
-          /* transition: transform 0.2s; */
-        }
-        img:hover {
-          transform: scale(1.2);
-          /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-      }
-
-      @media only screen and (max-width: 600px) {
-        .secondSection {
-          padding: 0;
-          img {
-            padding: 25px 0 10px 0;
-          }
-        }
-      }
-    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container-fluid mainContainer">
@@ -467,16 +281,16 @@
       </div>
       <div class="fifthSection">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img class="productImage" src="/work1.png" />
           </div>
-          <div class="howItWorks col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img class="productImage" src="/work2.png" />
           </div>
-          <div class="howItWorks col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img src="/work1.png" />
           </div>
-          <div class="howItWorks col-md-3">
+          <div class="col-md-3 d-flex justify-content-center">
             <img src="/work2.png" />
           </div>
         </div>
@@ -486,6 +300,167 @@
         class="d-flex flex-column justify-content-center align-items-center pb-5"
       >
         <button type="button" class="btn btn-primary">Buy Now</button>
+      </div>
+
+      <div class="row ps-5 pe-5 bg-light">
+        <div class="col-md-5 ps-5 pb-5">
+          <div class="d-flex flex-column justify-content-center textSection">
+            <span class="sub-title text-start">Feedbacks from Clients</span>
+            <h1 class="text-start">What They’re<br />Talking About Us</h1>
+            <p style="text-align: justify">
+              We wanted to take a moment to express our gratitude for your
+              continued partnership with our IT company. Your feedback is
+              invaluable to us, and we are always eager to hear about your
+              experiences and perspectives. During our recent discussions, we
+              took note of several points you raised regarding our services, and
+              we greatly appreciate your candidness. Your insights help us
+              understand your needs better.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7 ps-5 pe-5">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block w-100 h-100 bg-light">
+                  <!--editting this -->
+                  <div class="content-box">
+                    <span class="icon icon-quote"></span>
+                    <div class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Proin a lacus arcu. Nullam id dui eu orci maximus. Cras
+                        at auctor lectus, vel pretium tellus. Class aptent
+                        sociosqu ad litora torquent per conubia nostra.
+                      </p>
+                      ...
+                    </div>
+                  </div>
+
+                  <div class="info-box">
+                    <figure class="thumb">
+                      <img
+                        src="http://www.esquiretechnology.com//storage/client-feedbacks/March2024/Y6o4MkrK8ipXYIJYhy75.jpg"
+                        alt="Mosaddek Rahman"
+                      />
+                    </figure>
+                    <h5 class="name">Mosaddek Rahman</h5>
+                    <span class="designation">Manager</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-block w-100 h-100 bg-light">
+                  <!--editting this -->
+                  <div class="content-box">
+                    <span class="icon icon-quote"></span>
+                    <div class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                      ><i class="fa fa-star"></i>
+                    </div>
+                    <div class="text">
+                      <p>
+                        Proin a lacus arcu. Nullam id dui eu orci maximus. Cras
+                        at auctor lectus, vel pretium tellus. Class aptent
+                        sociosqu ad litora torquent per conubia nostra.
+                      </p>
+                      ...
+                    </div>
+                  </div>
+
+                  <div class="info-box">
+                    <figure class="thumb">
+                      <img
+                        src="http://www.esquiretechnology.com//storage/client-feedbacks/March2024/Y6o4MkrK8ipXYIJYhy75.jpg"
+                        alt="Mosaddek Rahman"
+                      />
+                    </figure>
+                    <h5 class="name">Mosaddek Rahman</h5>
+                    <span class="designation">Manager</span>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="/product1.jpeg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div> -->
+              <!-- <div class="carousel-item">
+                <img src="/work2.png" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <p class="m-5 p-5">footer</p>
       </div>
     </div>
   </body>
