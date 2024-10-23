@@ -15,13 +15,17 @@
       href="https://www.esquiretechnology.com/assets/frontend/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="/style.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="/javascript.js"></script> -->
   </head>
   <body>
     <div class="container-fluid mainContainer">
@@ -33,7 +37,7 @@
           </div>
           <div class="col-md-6">
             <img
-              class="rounded mx-auto d-block mainProductImage"
+              class="mx-auto d-block mainProductImage"
               src="https://www.esquiretechnology.com//storage/products/May2024/bye7dPq9yG9BLnDjyOmh.jpg"
               alt="Product Image"
             />
@@ -112,9 +116,97 @@
         </div>
       </div>
       <div class="thirdSection">
-        <div class="d-flex justify-content-center">
-          <img src="/Benifit.jpg" alt="benifit image" />
+        <div class="main d-flex justify-content-center">
+          <!-- before after image -->
+          <div class="featureImage">
+            <div class="image-container rounded mx-auto d-block">
+              <img
+                class="image-before slider-image"
+                src="https://as1.ftcdn.net/v2/jpg/05/71/06/76/1000_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg"
+                alt="color photo"
+              />
+              <img
+                class="image-after slider-image bg-dark"
+                src="image-1200x500.jpg"
+                alt="black and white"
+              />
+            </div>
+            <!-- step="10" -->
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Percentage of before photo shown"
+              class="slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="128"
+                  y1="40"
+                  x2="128"
+                  y2="216"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="96"
+                  y1="128"
+                  x2="16"
+                  y2="128"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="48 160 16 128 48 96"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <line
+                  x1="160"
+                  y1="128"
+                  x2="240"
+                  y2="128"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="208 96 240 128 208 160"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+              </svg>
+            </div>
+          </div>
         </div>
+
+        <!-- <div class="d-flex justify-content-center">
+          <img src="/Benifit.jpg" alt="benifit image" />
+        </div> -->
         <div class="row">
           <div class="col-md-6 col-sm-12 p-5">
             <div class="d-flex">
@@ -331,9 +423,11 @@
                   <div class="content-box">
                     <span class="icon icon-quote"></span>
                     <div class="rating">
-                      <i class="fa fa-star"></i><i class="fa fa-star"></i
-                      ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                      ><i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
                     </div>
                     <div class="text">
                       <p>
@@ -389,27 +483,8 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="carousel-item">
-                <img src="/product1.jpeg" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div> -->
-              <!-- <div class="carousel-item">
-                <img src="/work2.png" class="d-block w-100" alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
-                </div>
-              </div> -->
             </div>
-            <button
+            <!-- <button
               class="carousel-control-prev"
               type="button"
               data-bs-target="#carouselExampleCaptions"
@@ -420,8 +495,8 @@
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Previous</span>
-            </button>
-            <button
+            </button> -->
+            <!-- <button
               class="carousel-control-next"
               type="button"
               data-bs-target="#carouselExampleCaptions"
@@ -432,8 +507,8 @@
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
-            </button>
-            <div class="carousel-indicators">
+            </button> -->
+            <!-- <div class="carousel-indicators">
               <button
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
@@ -453,8 +528,8 @@
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
-              ></button>
-            </div>
+              ></button> 
+            </div> -->
           </div>
         </div>
       </div>
@@ -463,5 +538,33 @@
         <p class="m-5 p-5">footer</p>
       </div>
     </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".carousel-item").draggable({
+          axis: "x",
+          handle: ".carousel-item",
+          start: function (event, ui) {
+            $(this).addClass("dragging");
+          },
+          stop: function (event, ui) {
+            $(this).removeClass("dragging");
+            var carousel = $(this).closest(".carousel");
+            var carouselItems = carousel.find(".carousel-item");
+            var activeIndex = carouselItems.index($(this));
+            var dragDistance = ui.originalPosition.left - ui.position.left;
+            var slideDirection = dragDistance > 0 ? "prev" : "next";
+            var threshold = carousel.width() / 4;
+            if (Math.abs(dragDistance) > threshold) {
+              carousel.find(".carousel-control-" + slideDirection).click();
+            } else {
+              carousel.carousel(activeIndex);
+            }
+          },
+        });
+      });
+    </script>
+
+    <script src="/javascript.js"></script>
   </body>
 </html>
