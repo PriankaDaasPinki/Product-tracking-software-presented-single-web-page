@@ -36,7 +36,7 @@
   color: white;
   text-align: center;
   h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -55,6 +55,7 @@
   .featureImage {
     width: 100vh;
     max-height: 60vh;
+    margin-bottom: 5%;
     /* height: 500px; */
     border-radius: 18px;
     display: grid;
@@ -99,7 +100,7 @@
     /* border-radius: 7px !important;
     /* for Firefox */
     /* width: 100%; */
-    /* height: 100%; */ */
+    /* height: 100%; */
   }
 
   .slider:focus-visible ~ .slider-button {
@@ -161,6 +162,7 @@ p {
 }
 
 .sub-title {
+  margin-top: -1rem;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -203,7 +205,7 @@ p {
 }
 
 .thirdSection {
-  padding: 0 20%;
+  padding: 0 5%;
   div {
     padding: 0;
     /* border-radius: 20px; */
@@ -228,7 +230,7 @@ p {
   .howItWorks {
     padding: 2%;
     .workProcess {
-      height: 400px;
+      height: 280px;
       border-radius: 20px;
       color: white;
       background-position: center; /* Center the image */
@@ -269,8 +271,8 @@ p {
   justify-content: center;
   align-items: center;
   img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     margin: 20px;
     border-radius: 50%;
     transition: transform 0.6s ease-out 10ms;
@@ -291,6 +293,23 @@ p {
   }
 }
 
+.reviewSec{
+  padding: 0 5%;
+
+  h1{
+    font-size: 45px;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+  .textSection{
+    padding-top: 0;
+  }
+}
+
+
 .carousel-inner {
   padding: 10px;
   .carousel-item {
@@ -306,26 +325,26 @@ p {
     background-image: url(https://www.esquiretechnology.com/assets/frontend/images/icons/shape-12.png);
     background-position: left top;
     background-repeat: no-repeat;
-    padding: 80px 80px;
-    margin-bottom: 45px;
+    padding: 35px 40px;
+    margin: 5rem 0;
     font-size: 100%;
 
     p,
     .text {
       font-family: "DM Sans", sans-serif;
       color: gray;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 400;
       line-height: 30px;
     }
 
     .rating {
-      font-size: 30px;
+      font-size: 18px;
       padding: 5px;
       color: #286090;
       margin-bottom: 12px;
       i {
-        padding: 3px;
+        padding: 2px;
       }
     }
   }
@@ -340,9 +359,40 @@ p {
     box-sizing: border-box;
   }
 
+  @media only screen and (max-width: 599px) {
+    .content-box {
+      padding: 20px 20px;
+      text-align: center;     
+
+      .icon-quote{
+        height: 50px;
+        width: 50px;
+        background-size: 25px;
+      }
+
+      .rating {
+        font-size: 18px;
+        padding: 5px;
+        color: #286090;
+        margin-top: 10px;
+        margin-bottom: 6px;
+      }
+    }
+
+    .content-box:before {
+      position: absolute;
+      left: 40px;
+      top: 100%;
+      border-right: 100px solid transparent;
+      border-top: 35px solid #222429;
+      content: "";
+      box-sizing: border-box;
+    }
+  }
+
   .info-box {
     position: relative;
-    margin-top: -30px;
+    margin-top: -40px;
     margin-left: 160px;
     padding-left: 115px;
     min-height: 94px;
@@ -369,6 +419,43 @@ p {
         padding: 10px;
       }
     }
+
+    .vl {
+      border-left: 3px solid gray;
+      height: 5rem;
+      margin: 0 5rem;
+    }
+
+    .reviewCompanyLogo{
+      width: 5rem;
+      height: 5rem;
+      background-image: url('./product1.jpeg');
+      background-size: cover;
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 599px) {
+    .vl {
+      transform: rotate(270deg);
+      /* height: 15rem; */
+    }
+
+    .reviewCompanyLogo{
+      margin-top: 3rem;
+      width: 8rem !important;
+      height: 8rem !important;
+    }
+
+    .infoBox{
+      flex-direction: column;
+    }
+
+    .info-box {
+      margin-left: 0;
+      margin-top: 0;
+    }
   }
 
   h5 {
@@ -394,9 +481,9 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    height: 72px;
-    width: 72px;
-    font-size: 24px;
+    height: 65px;
+    width: 65px;
+    font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
