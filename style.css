@@ -75,7 +75,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .secondSection {
     padding: 0;
     img {
@@ -84,7 +84,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .textSection {
     text-align: justify;
   }
@@ -129,7 +129,6 @@ p {
   .image-before {
     position: absolute;
     inset: 0;
-    border-radius: 18px;
     width: var(--position);
     filter: grayscale(100%);
   }
@@ -187,7 +186,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .thirdSection {
     div .col-sm-12 {
       padding: 0 !important;
@@ -227,7 +226,7 @@ p {
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .forthSection {
     div .col-md-3 {
       padding: 1rem !important;
@@ -252,22 +251,19 @@ p {
   }
 }
 
-.reviewSec {
-  /* h1 {
-    font-size: 45px;
-  }
+@media only screen and (max-width: 768px) {
+  .fifthSection {
+    div .col-md-3 {
+      padding: 1rem !important;
+    }
 
-  p {
-    font-size: 1rem;
+    .pb-5 {
+      padding: 0 !important;
+    }
   }
-
-  .textSection {
-    padding-top: 0;
-  } */
 }
 
 .carousel-inner {
-  /* padding: 10px; */
   .carousel-item {
     img {
       height: 600px;
@@ -454,5 +450,20 @@ p {
     background-position: center;
     -webkit-transition: all 100ms ease;
     transition: all 100ms ease;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .reviewSec {
+    .col-md-5,
+    .col-md-7,
+    .textSection {
+      padding: 0 !important;
+    }
+    .carousel-inner {
+      .img {
+        top: 50px;
+      }
+    }
   }
 }
