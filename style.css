@@ -282,8 +282,7 @@ p {
 /* Fifth Section Design */
 .fifthSection {
   img {
-    height: 200px;
-    width: 200px;
+    min-height: 200px;
     border-radius: 50%;
     transition: transform 0.6s ease-out 10ms;
   }
