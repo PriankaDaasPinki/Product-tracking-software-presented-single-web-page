@@ -14,8 +14,8 @@
 
 .section {
   max-width: 1400px;
-  padding: 5% 5% 0 5%;
-  margin: 0;
+  padding: 5% 5% 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,12 +293,9 @@ p {
 
 @media only screen and (max-width: 768px) {
   .fifthSection {
-    div .col-md-3 {
-      padding: 1rem !important;
-    }
-
-    .pb-5 {
-      padding: 0 !important;
+    img{
+      min-height: 250px;
+      padding: 1rem 2.5rem;
     }
   }
 }
@@ -352,7 +349,7 @@ p {
     box-sizing: border-box;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 768px) {
     .content-box {
       padding: 20px 20px;
       text-align: center;
@@ -385,7 +382,6 @@ p {
 
   .info-box {
     position: relative;
-    /* margin-top: -40px; */
     margin-left: 160px;
     padding-left: 115px;
     min-height: 94px;
@@ -420,21 +416,23 @@ p {
     }
 
     .reviewCompanyLogo {
-      width: 5rem;
-      height: 5rem;
-      background-image: url("./product1.jpeg");
-      background-size: cover;
+      width: 30rem;
+      height: auto;
+      background-image: url("./images/logo/esqLogo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 768px) {
     .vl {
       transform: rotate(270deg);
-      /* height: 15rem; */
+      align-self: self-start;
+      margin: 2rem 4rem 0 !important;
     }
 
     .reviewCompanyLogo {
-      margin-top: 3rem;
       width: 8rem !important;
       height: 8rem !important;
     }
