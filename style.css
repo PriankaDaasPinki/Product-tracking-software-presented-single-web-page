@@ -7,14 +7,23 @@
 }
 
 .mainContainer {
-  background-color: #d7e3df;
   font-family: "Space Grotesk", sans-serif;
   padding: 0;
 }
 
 .section {
-  max-width: 1400px;
-  padding: 5% 5% 0;
+  padding: 5%;
+  /* background-color: #d7e3df; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionR {
+  padding: 5%;
+  background-color: #f2f3f6;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -114,13 +123,7 @@ p {
 @media only screen and (max-width: 768px) {
   .secondSection {
     padding: 0;
-    img {
-      margin: 1rem;
-    }
   }
-}
-
-@media only screen and (max-width: 768px) {
   .textSection {
     text-align: justify;
   }
@@ -282,7 +285,8 @@ p {
 /* Fifth Section Design */
 .fifthSection {
   img {
-    min-height: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     transition: transform 0.6s ease-out 10ms;
   }
@@ -293,9 +297,8 @@ p {
 
 @media only screen and (max-width: 768px) {
   .fifthSection {
-    img{
-      min-height: 250px;
-      padding: 1rem 2.5rem;
+    img {
+      padding: 2rem;
     }
   }
 }
