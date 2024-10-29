@@ -20,9 +20,7 @@
       href="https://www.esquiretechnology.com/assets/frontend/css/bootstrap.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/style.css" />
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script
@@ -30,25 +28,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Slick  -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-    ></script>
-
-    <!-- <script src="/javascript.js"></script> -->
   </head>
   <body>
     <div class="container-fluid mainContainer">
@@ -126,7 +105,7 @@
               />
             </div>
             <div class="col-md-6 col-sm-12">
-              <h4>E-BIT Footwear Production <br>IoT Solution</h4>
+              <h4>E-BIT Footwear Production <br />IoT Solution</h4>
               <p>
                 Esquire Technology Ltd. introduces E-BIT Footwear Production
                 IoT, an advanced real-time tracking solution using
@@ -250,16 +229,17 @@
                     src="./images/Before-After/beforeImage.png"
                     alt="Before Image"
                   />
-                  <span class="slider-image beforeText mt-5">Before</span>
+                  <span class="slider-image beforeText textBeforeAfter"
+                    >Before</span
+                  >
 
                   <img
                     class="image-after slider-image bg-dark"
                     src="./images/Before-After/afterImage.png"
                     alt="black and white"
                   />
-                  <span class="afterText">After</span>
+                  <span class="afterText textBeforeAfter">After</span>
                 </div>
-                <!-- step="10" -->
                 <input
                   type="range"
                   min="0"
@@ -617,140 +597,137 @@
       </div>
 
       <!-- Review Section  -->
-      <!-- <div class="row m-0"> -->
-        <div class="auto-container row">
-          <div class="row reviewSec pb-5 m-0 justify-content-between">
-            <div class="col-md-5 p-0">
-              <div
-                class="d-flex flex-column justify-content-center textSection pe-3"
+      <div class="auto-container row">
+        <div class="row reviewSec pb-5 m-0 justify-content-between">
+          <div class="col-md-5 p-0">
+            <div
+              class="d-flex flex-column justify-content-center textSection pe-3"
+            >
+              <span class="sub-title text-start m-0"
+                >Feedbacks from Clients</span
               >
-                <span class="sub-title text-start m-0"
-                  >Feedbacks from Clients</span
-                >
-                <h2 class="text-start">What They’re<br />Talking About Us</h2>
-                <p style="text-align: justify">
-                  We wanted to take a moment to express our gratitude for your
-                  continued partnership with our IT company. Your feedback is
-                  invaluable to us, and we are always eager to hear about your
-                  experiences and perspectives. During our recent discussions,
-                  we took note of several points you raised regarding our
-                  services, and we greatly appreciate your candidness. Your
-                  insights help us understand your needs better.
-                </p>
-              </div>
+              <h2 class="text-start">What They’re<br />Talking About Us</h2>
+              <p style="text-align: justify">
+                We wanted to take a moment to express our gratitude for your
+                continued partnership with our IT company. Your feedback is
+                invaluable to us, and we are always eager to hear about your
+                experiences and perspectives. During our recent discussions, we
+                took note of several points you raised regarding our services,
+                and we greatly appreciate your candidness. Your insights help us
+                understand your needs better.
+              </p>
             </div>
-            <div class="col-md-7 p-0 ps-5">
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide"
-                data-bs-touch="true"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="d-block w-100 h-100">
-                      <!--editting this -->
-                      <div class="content-box">
-                        <span class="icon icon-quote"></span>
-                        <div class="rating">
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                        <div class="text">
-                          <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Quisquam aut quae suscipit, officia reiciendis
-                            aperiam laboriosam repellendus odio est laudantium
-                            voluptatibus provident obcaecati ex veritatis iure
-                            nam eius! Deserunt, id?
-                          </p>
-                          ...
-                        </div>
+          </div>
+          <div class="col-md-7 p-0 ps-5">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide"
+              data-bs-touch="true"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100 h-100">
+                    <!--editting this -->
+                    <div class="content-box">
+                      <span class="icon icon-quote"></span>
+                      <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                       </div>
-
-                      <div class="info-box">
-                        <div class="d-flex infoBox">
-                          <div class="reviewer">
-                            <figure class="thumb">
-                              <img
-                                src="./images/favicon_icon/favicon-32x32.png"
-                                alt="Protik Rahman"
-                              />
-                            </figure>
-                            <h5 class="name">Protik Rahman</h5>
-                            <span class="designation">Developer</span>
-                          </div>
-                          <div class="vl"></div>
-
-                          <div class="reviewCompanyLogo"></div>
-                        </div>
+                      <div class="text">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Quisquam aut quae suscipit, officia reiciendis
+                          aperiam laboriosam repellendus odio est laudantium
+                          voluptatibus provident obcaecati ex veritatis iure nam
+                          eius! Deserunt, id?
+                        </p>
+                        ...
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="d-block w-100 h-100">
-                      <!--editting this -->
-                      <div class="content-box">
-                        <span class="icon icon-quote"></span>
-                        <div class="rating">
-                          <i class="fa fa-star"></i><i class="fa fa-star"></i
-                          ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                          ><i class="fa fa-star"></i>
-                        </div>
-                        <div class="text">
-                          <p>
-                            Proin a lacus arcu. Nullam id dui eu orci maximus.
-                            Cras at auctor lectus, vel pretium tellus. Class
-                            aptent sociosqu ad litora torquent per conubia
-                            nostra.
-                          </p>
-                          ...
-                        </div>
-                      </div>
 
-                      <div class="info-box">
-                        <div class="d-flex infoBox">
-                          <div>
-                            <figure class="thumb">
-                              <img
-                                src="http://www.esquiretechnology.com//storage/client-feedbacks/March2024/Y6o4MkrK8ipXYIJYhy75.jpg"
-                                alt="Mosaddek Rahman"
-                              />
-                            </figure>
-                            <h5 class="name">Mosaddek Rahman</h5>
-                            <span class="designation">Manager</span>
-                          </div>
-                          <div class="vl"></div>
-                          <div class="reviewCompanyLogo"></div>
+                    <div class="info-box">
+                      <div class="d-flex infoBox">
+                        <div class="reviewer">
+                          <figure class="thumb">
+                            <img
+                              src="./images/favicon_icon/favicon-32x32.png"
+                              alt="Protik Rahman"
+                            />
+                          </figure>
+                          <h5 class="name">Protik Rahman</h5>
+                          <span class="designation">Developer</span>
                         </div>
+                        <div class="vl"></div>
+
+                        <div class="reviewCompanyLogo"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
+                <div class="carousel-item">
+                  <div class="d-block w-100 h-100">
+                    <!--editting this -->
+                    <div class="content-box">
+                      <span class="icon icon-quote"></span>
+                      <div class="rating">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i
+                        ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                        ><i class="fa fa-star"></i>
+                      </div>
+                      <div class="text">
+                        <p>
+                          Proin a lacus arcu. Nullam id dui eu orci maximus.
+                          Cras at auctor lectus, vel pretium tellus. Class
+                          aptent sociosqu ad litora torquent per conubia nostra.
+                        </p>
+                        ...
+                      </div>
+                    </div>
+
+                    <div class="info-box">
+                      <div class="d-flex infoBox">
+                        <div>
+                          <figure class="thumb">
+                            <img
+                              src="http://www.esquiretechnology.com//storage/client-feedbacks/March2024/Y6o4MkrK8ipXYIJYhy75.jpg"
+                              alt="Mosaddek Rahman"
+                            />
+                          </figure>
+                          <h5 class="name">Mosaddek Rahman</h5>
+                          <span class="designation">Manager</span>
+                        </div>
+                        <div class="vl"></div>
+                        <div class="reviewCompanyLogo"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
               </div>
             </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
 
       <!-- Footer Section  -->
       <div class="sectionBG">
@@ -759,118 +736,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="col-md-7 p-0 ps-5">
-      <div class="slider demo">
-        <div class="carousel-item active">
-          <div class="d-block w-100 h-100 bg-light">
-            <div class="content-box">
-              <span class="icon icon-quote"></span>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <div class="text">
-                <p>
-                  Proin a lacus arcu. Nullam id dui eu orci maximus. Cras at
-                  auctor lectus, vel pretium tellus. Class aptent sociosqu ad
-                  litora torquent per conubia nostra.
-                </p>
-                ...
-              </div>
-            </div>
-
-            <div class="info-box">
-              <div class="d-flex infoBox">
-                <div class="reviewer">
-                  <figure class="thumb">
-                  </figure>
-                  <h5 class="name">Mosaddek Rahman</h5>
-                  <span class="designation">Manager</span>
-                </div>
-                <div class="vl"></div>
-
-                <div class="reviewCompanyLogo"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item border">
-          <div class="d-block w-100 h-100 bg-light">
-            <div class="content-box">
-              <span class="icon icon-quote"></span>
-              <div class="rating">
-                <i class="fa fa-star"></i><i class="fa fa-star"></i
-                ><i class="fa fa-star"></i><i class="fa fa-star"></i
-                ><i class="fa fa-star"></i>
-              </div>
-              <div class="text">
-                <p>
-                  Proin a lacus arcu. Nullam id dui eu orci maximus. Cras at
-                  auctor lectus, vel pretium tellus. Class aptent sociosqu ad
-                  litora torquent per conubia nostra.
-                </p>
-                ...
-              </div>
-            </div>
-
-            <div class="info-box">
-              <div class="d-flex infoBox">
-                <div>
-                  <figure class="thumb">
-                  </figure>
-                  <h5 class="name">Mosaddek Rahman</h5>
-                  <span class="designation">Manager</span>
-                </div>
-                <div class="vl"></div>
-                <div class="reviewCompanyLogo"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <script type="text/javascript">
-      $(document).ready(function () {
-        $(".demo").slick({
-          autoplay: true,
-          autoplaySpeed: 1000,
-          dots: true,
-          speed: 1000,
-          swipe: false,
-        });
-      });
-    </script> -->
-
-    <!-- <script>
-      $(document).ready(function () {
-        $(".carousel-item").draggable({
-          axis: "x",
-          handle: ".carousel-item",
-          start: function (event, ui) {
-            $(this).addClass("dragging");
-          },
-          stop: function (event, ui) {
-            $(this).removeClass("dragging");
-            var carousel = $(this).closest(".carousel");
-            var carouselItems = carousel.find(".carousel-item");
-            var activeIndex = carouselItems.index($(this));
-            var dragDistance = ui.originalPosition.left - ui.position.left;
-            var slideDirection = dragDistance > 0 ? "prev" : "next";
-            var threshold = carousel.width() / 4;
-            if (Math.abs(dragDistance) > threshold) {
-              carousel.find(".carousel-control-" + slideDirection).click();
-            } else {
-              carousel.carousel(activeIndex);
-            }
-          },
-        });
-      });
-    </script> -->
 
     <script src="/javascript.js"></script>
   </body>

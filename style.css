@@ -166,23 +166,26 @@ p {
     filter: grayscale(100%);
   }
 
-  .beforeText {
+  .textBeforeAfter {
     position: absolute;
     color: white;
-    display: block;
-    /* font-size: calc(var(--position) * 5); */
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
     font-weight: 700;
-    left: 16px;
-    top: 30%;
+    width: 4rem;
+    text-align: center;
+    height: auto;
+    border: 2px solid;
+    padding: 0.3rem;
+    top: calc(50% - 1rem);
+  }
+
+  .beforeText {
+    left: 10px;
   }
 
   .afterText {
-    position: absolute;
-    color: white;
-    font-weight: 700;
-    /* font-size: calc(600% - var(--position) * 6); */
-    right: 5px;
-    top: 40%;
+    right: 10px;
   }
 
   .slider {
