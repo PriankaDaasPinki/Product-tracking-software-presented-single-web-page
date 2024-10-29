@@ -3,6 +3,16 @@ const container = document.querySelector(".featureImage");
 const slider = document.getElementById("slider");
 document.querySelector(".slider").addEventListener("input", (e) => {
   container.style.setProperty("--position", `${e.target.value}%`);
+
+  if (e.target.value < 20) {
+    document.querySelector('.beforeText').style.display = "none";
+  } else if(e.target.value > 80) {
+    document.querySelector('.afterText').style.display = 'none';
+  } else {
+    document.querySelector('.beforeText').style.display = 'block';
+    document.querySelector('.afterText').style.display = 'block';
+  }
+  console.log(e.target.value);
 });
 
 // for mouse try
@@ -64,3 +74,38 @@ carousel.addEventListener("touchmove", (event) => {
 carousel.addEventListener("touchend", () => {
   isDragging = false; // Stop dragging on touch end
 });
+
+
+
+// // image before after font
+// const element = document.querySelector('.afterText');
+// // featureImage class
+// const image = document.querySelector('.featureImage');
+// const beforeText = document.querySelector('.beforeText');
+// const position = parseFloat(getComputedStyle(image).getPropertyValue('--position').trim());
+// const position1 = parseFloat(getComputedStyle(beforeText).getPropertyValue('--position'));
+// // const position = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--position'));
+// console.log(position);
+// console.log(position1);
+
+// if (position < 20) {
+//   element.style.display = "none";
+// } else {
+//   element.style.display = 'block';
+// }
+
+
+// // Initial check
+// checkPosition();
+
+// // Set up a MutationObserver to watch for changes in the :root element
+// const observer = new MutationObserver(() => {
+//   checkPosition();
+// });
+
+// // Start observing changes to the :root element's attributes
+// observer.observe(image, { attributes: true });
+
+// // If you change the value of --position dynamically, call checkPosition to update immediately
+// // For example, updating the CSS variable:
+// image.style.setProperty('--position', observer); // This will trigger the observer

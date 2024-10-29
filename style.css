@@ -169,10 +169,9 @@ p {
   .beforeText {
     position: absolute;
     color: white;
-    /* calc(10px + 100px); */
-    font-size: calc(var(--position) * 5);
+    display: block;
+    /* font-size: calc(var(--position) * 5); */
     font-weight: 700;
-    /* width: var(--position); */
     left: 16px;
     top: 30%;
   }
@@ -181,8 +180,7 @@ p {
     position: absolute;
     color: white;
     font-weight: 700;
-    font-size: calc(600% - var(--position) * 6);
-    /* width: var(--position); */
+    /* font-size: calc(600% - var(--position) * 6); */
     right: 5px;
     top: 40%;
   }
